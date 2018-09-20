@@ -139,6 +139,10 @@ export default class TextField extends PureComponent {
     if (props.error !== this.props.error) {
       this.setState({ errored: !!props.error });
     }
+
+    if (props.onRef) {
+      props.onRef(this);
+    }
   }
 
   componentDidMount() {
