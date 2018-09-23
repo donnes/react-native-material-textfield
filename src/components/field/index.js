@@ -53,6 +53,8 @@ export default class TextField extends PureComponent {
 
   static propTypes = {
     ...TextInput.propTypes,
+    
+    onRef: PropTypes.func,
 
     animationDuration: PropTypes.number,
 
